@@ -38,7 +38,8 @@ licenses(["notice"])
 
 config_setting(
     name = "windows",
-    constraint_values = ["@bazel_tools//platforms:windows"],
+    #constraint_values = ["@bazel_tools//platforms:windows"],
+    constraint_values = ["@platforms//setting:windows"],
 )
 
 config_setting(
